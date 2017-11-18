@@ -1,0 +1,39 @@
+《在哪儿》设计
+
+I Overview
+
+1. 前端使用 Android 
+2. 后端使用 Tomcat + HTTP Service
+
+II 后端设计
+
+架构： Spring + MyBatis + Sqlite + Http Service
+服务器：Tomcat
+
+III 数据库设计
+
+--用户表
+create table user (
+	id int primary key autoincrement,
+	phone_num char(11),
+	user_name varchar(50));
+	
+insert into user(phone_num, user_name) values('13817024379', '刘林栋');
+insert into user(phone_num, user_name) values('13916253764', '孟祥令');
+	
+--好友表
+create table friend (
+	id int primary key autoincrement,
+	phone_num1 char(11),
+	phone_num2 char(11)
+);
+
+insert into friend(phone_num1, phone_num2) value('13817024379', '13916253764');
+
+--位置表
+create table location (
+	id long primary key autoincrement,
+	phone_num char(11),
+	latitude double,
+	longitude double
+);
