@@ -25,3 +25,6 @@ create table location (
 	latitude double,
 	longitude double
 );
+
+insert into location (phone_num, record_time, latitude, longitude) values('13817024379', '2017-11-26', 0.0, 0.0);
+insert into location (phone_num, record_time, latitude, longitude) values('13916253764', '2017-11-26', 0.0, 0.0);
