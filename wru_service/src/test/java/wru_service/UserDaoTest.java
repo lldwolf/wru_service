@@ -31,8 +31,9 @@ public class UserDaoTest {
         for (User user : users) {
             Assert.assertNotNull(user);
             logger.info(user.toString());
-            ((ConfigurableApplicationContext) ctx).close();
         }
-    }
+
+        ((ConfigurableApplicationContext) ctx).close();
+}
 
 }

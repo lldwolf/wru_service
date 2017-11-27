@@ -26,6 +26,14 @@
         <property name="mapperInterface" value="lld.wru.dao.UserMapper"></property>
         <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
     </bean>
+    <bean id="locationDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+        <property name="mapperInterface" value="lld.wru.dao.LocationMapper"></property>
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
+    </bean>
+    <bean id="friendDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
+        <property name="mapperInterface" value="lld.wru.dao.FriendMapper"></property>
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
+    </bean>
 
 </beans>
         

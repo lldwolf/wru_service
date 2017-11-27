@@ -21,6 +21,7 @@ insert into friend(phone_num1, phone_num2) values('13817024379', '13916253764');
 create table location (
 	id integer primary key autoincrement,
 	phone_num char(11),
+	record_time datetime,
 	latitude double,
 	longitude double
 );
